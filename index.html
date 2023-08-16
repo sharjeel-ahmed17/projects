@@ -6,250 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepsi.com</title>
     <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-    <style>
-        .mainCointainer {
-            max-width: 1600px;
-            margin: auto;
-            padding: 0px 20px;
+    <link rel="stylesheet" href="style.css">
 
-
-        }
-
-        /* css reset  */
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* navigation stying  */
-        header {
-            background: blue;
-            position: sticky;
-            top: 0px;
-            z-index: 1;
-
-        }
-
-        nav ul {
-            display: flex;
-            list-style-type: none;
-            height: 100px;
-            align-items: center;
-            position: relative;
-        }
-
-        nav li {
-            margin-left: 20px;
-        }
-
-        nav li img {
-            margin-right: 30px;
-            cursor: pointer;
-        }
-
-        nav li a {
-            color: white;
-            text-decoration: none;
-        }
-
-
-        .navButton {
-            position: absolute;
-            right: 5px;
-            top: 25px;
-            padding: 12px 10px;
-            cursor: pointer;
-        }
-
-        /* main section */
-        .section {
-            width: 100%;
-            height: 700px;
-            background: lightblue;
-            display: flex;
-        }
-
-        .section1 {
-            background: url(./assets/images/sec-1-bg.png) center;
-            background-size: cover;
-
-
-        }
-
-        .container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-
-            /* border: 2px solid green; */
-        }
-
-        .left {
-            width: 50%;
-            /* background: red; */
-
-
-            position: relative;
-
-        }
-
-        .left .section1img {
-            width: 125%;
-            height: 80%;
-            position: absolute;
-            bottom: 0px;
-        }
-
-        .right {
-            width: 50%;
-            /* background: yellow; */
-            display: flex;
-
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            position: relative;
-        }
-
-        .right-box p {
-            text-align: center;
-            margin: 0 50px;
-        }
-
-        .section2 {
-            background: url(./assets/images/sec2-bg.webp) center;
-            background-size: cover;
-        }
-
-        .section2img {
-            width: 140%;
-            height: 100%;
-        }
-
-        .section3 {
-            background: url(./assets/images/sec3-bg.png) center;
-            background-size: cover;
-        }
-
-        .sec3leftside {
-
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: absolute;
-            right: 100px;
-        }
-
-        .section5 {
-
-            background: url(./assets/images/7.png), url(./assets/images/9.png), url(./assets/images/8.png), url(./assets/images/10.png);
-            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-            background-size: 45% 30%, 30%, 70% 100%, cover;
-            background-position: 10% 15%, 8% 92%, 100% 100%, 0% 0%;
-            position: relative;
-        }
-
-        .section5::before {
-            content: "";
-            background-color: #0065c3;
-
-
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -5;
-
-        }
-
-        .section7 {
-            background: url(./assets/images/sec7-bg.jpg) center;
-            background-size: cover;
-        }
-
-        .rightsec {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .rightsec img {
-            width: 70%;
-        }
-
-        .section8 {
-            background: url(./assets/images/sec-8-bg.png) center;
-            background-size: cover;
-        }
-
-        .section9 {
-            width: 100%;
-            height: 250px;
-        }
-
-        .section9 h2 {
-            text-align: center;
-        }
-
-        .sec9Container {
-            display: flex;
-            flex-wrap: wrap;
-
-
-            justify-content: center;
-        }
-
-        .sec9Container .item {
-            flex: 17%;
-            max-width: 17%;
-
-
-        }
-
-        footer {
-            height: 400px;
-            width: 100%;
-            background: rgb(95, 95, 204);
-            color: white;
-        }
-
-        .footerContainer {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 100%;
-            position: relative;
-            right: 50px;
-        }
-
-        .footerContainer ul {
-            list-style-type: none;
-        }
-
-        .socailIcon {
-            display: flex;
-            gap: 10px;
-
-        }
-
-        .socailIcon img {
-            width: 40px;
-        }
-
-        .item {
-            position: relative;
-        }
-
-        .item img:last-child {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            width: 20%;
-        }
-    </style>
 </head>
 
 <body>
@@ -267,7 +25,7 @@
                         <li><a href="#">WHAT'S NEW</a></li>
                         <li><a href="#">CONTACT US</a></li>
 
-                        <li><button class="navButton">BUY PEPSI PRODUCTS</button></li>
+                        <li><button class="navButton btn">BUY PEPSI PRODUCTS</button></li>
                     </ul>
                 </nav>
             </header>
@@ -285,7 +43,7 @@
                             <img src="./assets/images/sec1-img2.svg" alt="">
                         </div>
                         <div class="right-box">
-                            <button>GET IT NOW</button>
+                            <button class="btn">GET IT NOW</button>
                         </div>
                         <div class="right-box">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sit sed magni deleniti
@@ -306,10 +64,10 @@
                     </div>
                     <div class="rightSec2">
                         <div class="rightSec2Box">
-                            <img src="./assets/images/4.svg" alt="">
+                            <img src="./assets/images/4.svg" alt="" width="450px">
                         </div>
                         <div class="rightSec2Box">
-                            <img src="./assets/images/try-it-to-believe-it.svg" alt="">
+                            <img src="./assets/images/try-it-to-believe-it.svg" alt="" width="400px">
                         </div>
                         <div class="rightSec2Box">
 
@@ -319,14 +77,20 @@
                                 allowfullscreen>
 
                             </iframe>
-                            <p style="color: white; text-align: center;">sharjeel ali bari</p>
-                        </div>
-                        <div class="rightSec2Box">
+
+
+
                             <iframe width="200" height="200" src="https://www.youtube.com/embed/UZZ5s_qhHMA"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
-                            <p style="color: white; text-align: center;">sharjeel ali bari</p>
+
+                        </div>
+
+                        <div class="rightSec2Box">
+                            <p>Lorem, ipsum dolor.</p>
+                            <p>Lorem, ipsum dolor.</p>
+
                         </div>
                     </div>
                 </div>
@@ -335,13 +99,15 @@
 
                 <div class="container">
                     <div class="left">
-                        <img src="./assets/images/5.png" alt="" width="60%">
+                        <img src="./assets/images/5.png" alt="" style="position: absolute;
+                        right: 0%;
+                        bottom: 10%; width: 60%;">
                     </div>
                     <div class="right">
                         <div class="sec3leftside">
-                            <img src="./assets/images/6.png" alt="" width="50%">
+                            <img src="./assets/images/6.png" alt="" width="80%">
                             <h2>smooth cremy delicios</h2>
-                            <button>learn more</button>
+                            <button class="btn">learn more</button>
                         </div>
                     </div>
                 </div>
@@ -385,7 +151,8 @@
                                 Pariatur facere assumenda animi
                                 dolores at cumque, obcaecati eos? Natus harum fuga voluptatem repudiandae ipsa delectus
                                 dolores ut dolorem? Similique, odio natus.</P>
-                            <button style="margin: 30px 80px; align-self: flex-start;">VIEW PRODUCTS</button>
+                            <button class="btn" style="margin: 30px 80px; align-self: flex-start;">VIEW
+                                PRODUCTS</button>
                         </div>
                         <!-- right section start here -->
                         <div style="width: 50%;display: flex; justify-content: center; align-items: center;">
@@ -401,7 +168,7 @@
 
 
             <section class="section9">
-                <h2>STAY ON THE PULSE. FOLLOW PEPSI.</h2>
+                <h2 style="font-size: 36px; color: #0065c3;">STAY ON THE PULSE. FOLLOW PEPSI.</h2>
                 <div class="sec9Container">
                     <div class="item">
                         <img src="./assets/images/13.png" alt="" width="100%" height="100%">
